@@ -9,11 +9,11 @@ export default function Contact() {
           method="POST"
           className="flex flex-col w-full md:w-7/12"
         >
-          <Title>Contact</Title>
+          <Title>Contactame</Title>
           <input
             type="text"
             name="name"
-            placeholder="Name"
+            placeholder="Nombre"
             className="p-2 bg-transparent border-2 rounded-md focus:outline-none"
             required
           />
@@ -26,7 +26,7 @@ export default function Contact() {
           />
           <textarea
             name="message"
-            placeholder="Message"
+            placeholder="Mensaje"
             rows={10}
             className="p-2 mb-4 bg-transparent border-2 rounded-md focus:outline-none"
             required
@@ -34,7 +34,7 @@ export default function Contact() {
           <button
             className="text-center inline-block px-8 py-3 w-max text-base font-medium rounded-md text-white bg-gradient-to-r from-purple-500 to-violet-500 drop-shadow-md hover:from-purple-600 hover:to-violet-600"
           >
-            Contact Me
+            Enviar
           </button>
         </form>
       </div>

@@ -4,5 +4,5 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Timeline from "./Timeline";
-
-export { Intro, Navbar, Projects, Contact, Timeline, Footer };
+import About from "./About";
+export { Intro, Navbar, Projects, Contact, Timeline, About, Footer };

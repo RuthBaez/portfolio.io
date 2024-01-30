@@ -3,6 +3,7 @@ import {
   Intro,
   Projects,
   Timeline,
+  About,
   Contact,
   Footer,
 } from "./components/";
@@ -13,8 +14,9 @@ export default function App() {
       <Navbar />
       <div className="max-w-5xl w-11/12 mx-auto">
         <Intro />
-        <Projects />
+        <Projects /> 
         <Timeline />
+        <About/>
         <Contact />
         <Footer />
       </div>

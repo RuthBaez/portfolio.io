@@ -1,4 +1,5 @@
 import education from "../data/education";
+import jobs from "../data/jobs";
 import TimelineItem from "./TimelineItem";
 import Title from "./Title";
 export default function Timeline() {
@@ -14,6 +15,20 @@ export default function Timeline() {
             details={item.details}
           />
         ))}
+        
+      </div>
+      <div className="w-full md:w-7/12">
+        <Title>Experiencia Laboral</Title>
+        {jobs.map((item) => (
+          <TimelineItem
+            year={item.year}
+            title={item.title}
+            duration={item.duration}
+            details={item.details}
+          />
+          
+          ))}
+          
       </div>
     </div>
   );

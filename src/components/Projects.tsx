@@ -1,9 +1,10 @@
 import { projects } from "../data";
 import Title from "./Title";
+
 export default function Projects() {
   return (
-    <div>
-      <Title>Projects</Title>
+    <div className="mt-10">
+      <Title>Proyectos</Title>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-3">
         {projects.map((project) => (
           <div
@@ -18,6 +19,7 @@ export default function Projects() {
             <a href={project.url} className="text-xl font-semibold flex mb-2">
               {project.title}
             </a>
+           
             {project.stack.map((language) => (
               <span
                 key={language}
@@ -26,6 +28,7 @@ export default function Projects() {
                 {language}
               </span>
             ))}
+             <p className="text-gray-600 mb-4 mt-5">{project.description}</p>
           </div>
         ))}
       </div>
